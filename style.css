@@ -1,0 +1,275 @@
+h2{
+    margin-bottom: 0;
+    
+}
+
+.logo img
+{
+    width: 200px;
+    height: auto;
+    text-align: center;
+   
+}
+
+header .logo {
+    margin-left: 120px;
+    padding: 20px;
+}
+
+.fv {
+    width: 100%;
+}
+
+.fv img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center 30%;
+    display: block;
+}
+
+.scroll-down 
+{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+    margin: 20px 0 30px;
+}
+
+.about h2,
+.works h2,
+.contact h2 {
+    margin-bottom: 0;
+}
+
+.about h2::after,
+.works h2::after,
+.contact h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 2px dotted #777;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}
+.about,
+.works,
+.contact {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.about {
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 0px;
+    padding-left: 70px;
+}
+
+.about-content img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-text h3 {
+    margin: 0 0 15px;
+}
+
+.about-text p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.works {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+
+.works ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    padding: 0;
+    margin: 20px 0 0;
+    list-style: none;
+}
+
+.works li {
+    width: calc((100% - 80px) / 3);
+}
+
+
+.works li img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: 0.3s;
+}
+
+.works li a:hover img {
+    filter: brightness(60%);
+}
+
+.works-btn {
+    display: block;
+    width: 200px;
+    margin: 25px auto 0;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.works-btn:hover {
+    background-color: #777;
+}
+
+.contact {
+    margin-bottom: 40px;
+    padding-bottom: 70px;
+}
+
+
+.contact p {
+    margin-left: 0;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer .logo {
+    margin: 0;
+    padding: 0;
+}
+
+
+footer .logo img {
+    width: 200px;
+    height: auto;
+}
+
+.footer-text {
+    color: #fff;
+    margin-top: 20px;
+}
+
+
+/* =========================
+   スマホ対応
+========================= */
+
+@media screen and (max-width: 767px) {
+
+    /* 全体の余白 */
+    .about,
+    .works,
+    .contact {
+        width: calc(100% - 40px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* ヘッダー */
+    header .logo {
+        margin-left: 0;
+        padding: 15px;
+        text-align: center;
+    }
+
+    header .logo img {
+        width: 160px;
+        margin: 0 auto;
+    }
+
+    /* メインビジュアル */
+    .fv img {
+        height: 300px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* About */
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .about-content img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text h3 {
+        margin-bottom: 15px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+        line-height: 1.8;
+        text-align: left;
+    }
+
+    /* Works */
+    .works ul {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .works li {
+        width: 100%;
+    }
+
+    .works li img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .works-btn {
+        width: 200px;
+        margin: 30px auto 0;
+    }
+
+    /* Contact */
+    .contact {
+        padding-bottom: 50px;
+    }
+
+    .contact p {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    /* Footer */
+    footer {
+        padding: 30px 20px;
+    }
+
+    footer .logo img {
+        width: 160px;
+    }
+}
